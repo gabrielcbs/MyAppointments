@@ -17,7 +17,6 @@ Projects: The approach adopted was PCL (Portable Class Library).
 - MyAppointments.iOS: The app project, which has been developed using the Storyboard approach. 
 - MyAppointments.Localization: A project to implement future globalization aspects such as specific language and/or currency.
 
-Missed Implementations so far (11 Dec 2016):
+Missed Implementations so far (13 Dec 2016):
 - Database persistence;
-- Map in the host details;
 - Localization;
