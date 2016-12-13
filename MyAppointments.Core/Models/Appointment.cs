@@ -7,6 +7,5 @@ namespace MyAppointments.Core.Models
 		public DateTime DateAndTime { get; set; }
 		public HostPerson HostPerson { get; set; }
 		public string Notes { get; set; }
-		public object FromCityId { get; internal set; }
 	}
 }

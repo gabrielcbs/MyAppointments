@@ -260,7 +260,7 @@
                                 <rect key="frame" x="7" y="57" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-									<!--ListAppointmentsView-->
+                                    <!--ListAppointmentsView-->
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" id="87" rowHeight="44" customClass="AppointmentCell" restorationIdentifier="AppointmentCell" reuseIdentifier="AppointmentCell">
                                         <rect key="frame" x="0.0" y="28" width="240" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
@@ -430,7 +430,7 @@
                                 <rect key="frame" x="7" y="57" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-									<!--This Week Appointments-->
+                                    <!--This Week Appointments-->
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" id="168" rowHeight="44" customClass="AppointmentCell" restorationIdentifier="AppointmentCell" reuseIdentifier="AppointmentCell">
                                         <rect key="frame" x="0.0" y="28" width="240" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
@@ -448,7 +448,7 @@
                                                         <mask key="constraints">
                                                             <include reference="469"/>
                                                         </mask>
-                                                    </variation>													
+                                                    </variation>
                                                     <constraints>
                                                         <constraint id="469" firstAttribute="width" constant="180"/>
                                                     </constraints>
@@ -456,7 +456,7 @@
                                                         <mask key="constraints">
                                                             <exclude reference="469"/>
                                                         </mask>
-                                                    </variation>													
+                                                    </variation>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DateAndTimeLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="339" translatesAutoresizingMaskIntoConstraints="NO">
                                                     <rect key="frame" x="313" y="11" width="42" height="21"/>
@@ -476,7 +476,7 @@
                                                         <mask key="constraints">
                                                             <exclude reference="480"/>
                                                         </mask>
-                                                    </variation>													
+                                                    </variation>
                                                 </label>
                                             </subviews>
                                             <variation key="default">
@@ -524,7 +524,7 @@
                                         <include reference="400"/>
                                     </mask>
                                 </variation>
-								<inset key="separatorInset" minX="15" minY="0" maxX="15" maxY="0"/>
+                                <inset key="separatorInset" minX="15" minY="0" maxX="15" maxY="0"/>
                                 <constraints>
                                     <constraint id="399" firstAttribute="width" constant="375"/>
                                     <constraint id="400" firstAttribute="height" constant="600"/>
@@ -534,7 +534,7 @@
                                         <exclude reference="399"/>
                                         <exclude reference="400"/>
                                     </mask>
-                                </variation>								
+                                </variation>
                             </tableView>
                         </subviews>
                         <variation key="default">
@@ -555,7 +555,7 @@
                                 <include reference="398"/>
                             </mask>
                         </variation>
-						<constraints>
+                        <constraints>
                             <constraint id="397" firstItem="164" firstAttribute="trailing" secondItem="167" secondAttribute="trailing"/>
                             <constraint id="398" firstItem="164" firstAttribute="bottom" secondItem="167" secondAttribute="bottom"/>
                         </constraints>
@@ -616,7 +616,7 @@
                                     <constraint id="300" firstAttribute="width" constant="329"/>
                                 </constraints>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="227" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="227" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES" enabled="NO">
                                 <rect key="frame" x="20" y="112" width="329" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -656,6 +656,9 @@
                                 </userDefinedRuntimeAttributes>
                                 <color key="backgroundColor" colorSpace="calibratedRGB" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1"/>
                             </textView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="488" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="18" y="446" width="332" height="192"/>
+                            </mapView>
                         </subviews>
                         <constraints>
                             <constraint id="258" firstItem="211" firstAttribute="centerX" secondItem="184" secondAttribute="centerX"/>
@@ -693,6 +696,7 @@
                         <outlet property="NameTextField" destination="227" id="name-outlet-227"/>
                         <outlet property="AddressTextView" destination="253" id="name-outlet-253"/>
                         <outlet property="OpeningHoursTextView" destination="233" id="name-outlet-233"/>
+                        <outlet property="HostMap" destination="488" id="name-outlet-488"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="185" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -1,6 +1,7 @@
 using System;
 using MvvmCross.Binding.BindingContext;
 using MyAppointments.Core.ViewModels;
+using UIKit;
 
 namespace MyAppointments.iOS
 {
@@ -45,10 +46,12 @@ namespace MyAppointments.iOS
 		public override void ViewDidLoad()
 		{
 			base.ViewDidLoad();
-			// CloseButton.Layer.BorderWidth = 1;
-			// CloseButton.Layer.BorderColor = UIColor.Black;
 
-			// Perform any additional setup after loading the view, typically from a nib.
+			HostMap.AutoresizingMask = UIViewAutoresizing.FlexibleDimensions;
+
+			// set the coords and zoom on the mapp
+			HostMap.Region = new MapHelper().GetCoordinateRegion
+								(HostPersonDetailViewModel.SelectedHostPerson.CityCoordinates);
 		}
 
 		public override void ViewWillAppear(bool animated)

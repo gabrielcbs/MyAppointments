@@ -24,6 +24,10 @@ namespace MyAppointments.iOS
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        MapKit.MKMapView HostMap { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel MapLabel { get; set; }
 
         [Outlet]
@@ -52,6 +56,11 @@ namespace MyAppointments.iOS
             if (AddressTextView != null) {
                 AddressTextView.Dispose ();
                 AddressTextView = null;
+            }
+
+            if (HostMap != null) {
+                HostMap.Dispose ();
+                HostMap = null;
             }
 
             if (MapLabel != null) {

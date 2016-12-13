@@ -141,6 +141,7 @@
     <Folder Include="Assets.xcassets\ic-calendar-active.imageset\" />
     <Folder Include="Assets.xcassets\ic-calendar-normal.imageset\" />
     <Folder Include="Assets.xcassets\ic-search-active.imageset\" />
+    <Folder Include="Utility\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -185,6 +186,7 @@
       <DependentUpon>HostPersonDetailView.cs</DependentUpon>
     </Compile>
     <Compile Include="TableViewSources\ThisWeekAppointmentsTableViewSource.cs" />
+    <Compile Include="Utility\MapHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MyAppointments.Core\MyAppointments.Core.csproj">
